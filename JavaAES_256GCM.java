@@ -37,6 +37,9 @@ class JavaAES_256GCM
         this.keyString=keyString;
     }
 
+    public JavaAES_256GCM()
+    {}
+
     public void setInput(String input)
     {
         this.input=input;
