@@ -1,3 +1,4 @@
+[alt text](https://media.cybernews.com/images/750w/2020/12/What-is-AES-Encryption.jpg)
 This is a Java class that performs the encryption of a string using the AES-256 GCM algorithm.
 
 I wrote this class modifying the code provided by Bharath R. on his specific article on Medium (https://medium.com/@bh03051999/aes-gcm-encryption-and-decryption-for-python-java-and-typescript-562dcaa96c22).
