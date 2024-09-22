@@ -148,14 +148,14 @@ class JavaAES_256GCM
         input=Base64.getEncoder().encodeToString(cipherByte);
     }
 
-    public static byte[] getRandomNonce(int length)
+    private static byte[] getRandomNonce(int length)
     {
         byte[] nonce=new byte[length];
         new SecureRandom().nextBytes(nonce);
         return nonce;
     }
 
-    public static SecretKey getSecretKey(String password, byte[] salt) throws NoSuchAlgorithmException, InvalidKeySpecException
+    private static SecretKey getSecretKey(String password, byte[] salt) throws NoSuchAlgorithmException, InvalidKeySpecException
     {
         KeySpec spec=new PBEKeySpec(password.toCharArray(), salt, ITERATIONS, KEY_LENGTH*8);
 
