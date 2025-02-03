@@ -28,8 +28,8 @@ class JavaAES_256GCM
     private static final int KEY_LENGTH=32;
     private static final int ITERATIONS=65535;
 
-    private String input="";
-    private String keyString="";
+    private String input=null;
+    private String keyString=null;
 
     public JavaAES_256GCM(String input, String keyString)
     {
@@ -38,7 +38,10 @@ class JavaAES_256GCM
     }
 
     public JavaAES_256GCM()
-    {}
+    {
+        this.input="";
+        this.keyString="";
+    }
 
     public void setInput(String input)
     {
